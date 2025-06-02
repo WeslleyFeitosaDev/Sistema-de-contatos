@@ -19,7 +19,10 @@
 
         if($resultado->num_rows > 0):?>
             <div class="box_contact_save">
-                <h1>Contatos Salvos</h1>
+                <div class="titulo">
+                    <h1>Contatos Salvos</h1>
+                </div>
+                
                 <?php  while ($row=$resultado->fetch_assoc()) :?>
                     <div class="field_contact_save">
                         <p><?=$row["nome"]?></p>
