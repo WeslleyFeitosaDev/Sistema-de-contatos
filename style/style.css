@@ -17,14 +17,14 @@ body{
     justify-content: center;
 }
 
-.caixa_adicionar_contatos{
+.caixa_adicionar_contatos,.box_contact_save{
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: center;
+    
     flex-direction: column;
     width: 450px;
-    height: 750px;
+    height: 550px;
     background-color: #0D1B2A;
     border-radius: 20px;
 }
