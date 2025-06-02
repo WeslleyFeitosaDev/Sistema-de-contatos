@@ -13,9 +13,9 @@
             <h1>Adicionar Contatos</h1>
         </div>
 
-        <form action="" method="post">
-            <input type="text" name="name_contact" id="name_contact" placeholder="Digite o nome do contato">
-            <input type="text" name="number_contact" id="number_contact" placeholder="Digite o número">
+        <form action="add_contatos.php" method="post">
+            <input type="text" name="name_contact" id="name_contact" placeholder="Digite o nome do contato" required>
+            <input type="text" name="number_contact" id="number_contact" placeholder="Digite o número" required>
             <input type="submit" value="Adicionar">
         </form>
     </div>
