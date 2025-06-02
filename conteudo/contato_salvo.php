@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <h1>Contatos salvos</h1>
 
     <?php 
         $conn=new mysqli("localhost","root","","lista_contatos");
@@ -18,23 +18,17 @@
         $resultado=$conn->query($sql);
 
         if($resultado->num_rows > 0):?>
-            <table>
-                <tr>
-                    <th>nome</th>
-                    <th>numero</th>
-                </tr>
-                <?php  while($rom = $resultado->fetch_assoc()):?>
-                    <tr>
-                        <td><?= htmlspecialchars($rom["nome"])?></td>
-                        <td><?= htmlspecialchars($rom["numero"])?></td>
-                    </tr>
+            <div class="box_contact_save">
+                <h1>Contatos Salvos</h1>
+                <?php  while ($row=$resultado->fetch_assoc()) :?>
+                    <div class="field_contact_save">
+                        <p><?=$row["nome"]?></p>
+                    </div>
                 <?php endwhile;?>
-            </table>
+            </div>
         <?php else: ?>
-            <p>Nenhum contato salvo</p>
+            <p>Nenhum Número salvo</p>
         <?php endif;
-
-        $conn->close();
     
     ?>
 </body>
