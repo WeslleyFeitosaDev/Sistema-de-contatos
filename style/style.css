@@ -21,9 +21,9 @@ body{
     position: absolute;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
     flex-direction: column;
-    width: 450px;
+    width: 380px;
     height: 550px;
     background-color: #0D1B2A;
     border-radius: 20px;
@@ -86,3 +86,13 @@ form>input[type=submit]:hover{
     background-color: #778DA9;
 }
 
+.field_contact_save{
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #E0E1DD;
+    margin-bottom: 5px;
+}
