@@ -36,7 +36,10 @@
                 <?php endwhile;?>
             </div>
         <?php else: ?>
-            <p>Nenhum Número salvo</p>
+            <div class="box_contact_save">
+                <p>Nenhum Número salvo</p>
+            </div>
+           
         <?php endif;
     
     ?>
