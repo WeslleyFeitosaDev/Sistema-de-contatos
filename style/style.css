@@ -116,3 +116,27 @@ form>input[type=submit]:hover{
     color: #0D1B2A;
     cursor: pointer;
 }
+
+
+.box_contact_save p{
+    color: #E0E1DD;
+}
+
+.bnt_add_contact {
+    width: 320px;
+    height: 45px;
+    background-color: #415A77;
+    color: #E0E1DD;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+}
+
+.bnt_add_contact a{
+    text-decoration: none;
+    color: #E0E1DD;
+    font-weight: bold;
+    font-size: 22px;
+}
