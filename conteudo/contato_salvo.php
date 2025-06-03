@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
     <link rel="stylesheet" href="../style/style.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
 </head>
 <body>
 
@@ -26,6 +28,7 @@
                 <?php  while ($row=$resultado->fetch_assoc()) :?>
                     <div class="field_contact_save">
                         <p><?=$row["nome"]?></p>
+                        <i class='bx  bx-trash-alt'></i> 
                     </div>
                 <?php endwhile;?>
             </div>
