@@ -38,6 +38,10 @@
         <?php else: ?>
             <div class="box_contact_save">
                 <p>Nenhum Número salvo</p>
+
+                <div class="bnt_add_contact">
+                    <a href="index.php">Adicionar contato</a>
+                </div>
             </div>
            
         <?php endif;
