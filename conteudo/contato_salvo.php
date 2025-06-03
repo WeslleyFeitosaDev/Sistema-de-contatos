@@ -16,7 +16,7 @@
             die("Error :" .$conn->connect_error);
         }
 
-        $sql="SELECT nome,numero FROM contato ORDER BY id DESC";
+        $sql="SELECT id,nome,numero FROM contato ORDER BY id DESC";
         $resultado=$conn->query($sql);
 
         if($resultado->num_rows > 0):?>
@@ -28,7 +28,10 @@
                 <?php  while ($row=$resultado->fetch_assoc()) :?>
                     <div class="field_contact_save">
                         <p><?=$row["nome"]?></p>
-                        <i class='bx  bx-trash-alt'></i> 
+                        <a href="deletar_contato.php?id=<?=$row["id"]?>">
+                            <i class='bx  bx-trash-alt'></i>
+                        </a>
+                         
                     </div>
                 <?php endwhile;?>
             </div>
