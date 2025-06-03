@@ -1,6 +1,6 @@
 <?php 
-    $name_contact=$_POST["name_contact"];
-    $number_contact=$_POST["number_contact"];
+    $name_contact=$_POST["name_contact"] ?? "";
+    $number_contact=$_POST["number_contact"] ?? "";
 
     $conn=new mysqli("localhost","root","","lista_contatos");
     if($conn->connect_error){
