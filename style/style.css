@@ -97,7 +97,14 @@ form>input[type=submit]:hover{
     border-radius: 5px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 10px;
     background-color: #E0E1DD;
     margin-bottom: 5px;
+}
+
+.field_contact_save i{
+    font-size: 25px;
+    color: #0D1B2A;
+    cursor: pointer;
 }
