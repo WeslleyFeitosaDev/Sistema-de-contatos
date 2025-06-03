@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
+    <?php
+        require_once "add_contatos.php";
+    ?>
     <div class="caixa_adicionar_contatos">
         <div class="titulo">
             <h1>Adicionar Contatos</h1>
